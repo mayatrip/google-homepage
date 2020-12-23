@@ -1,1 +1,2 @@
 # google-homepage
+This project is to clone a website's HTML and CSS to practice using these skills. I should be able to reposition elements on a page in multiple ways, and change basic design elements.
