@@ -1,0 +1,36 @@
+<style>
+#google-button {float:left; padding-top:10px; padding-left:20px; }
+#search-bar {padding-left: 50px; display:inline-block;}
+#search-text {position: relative; height:40px; margin-top: 15px; width: 40vw; border-radius:25px; border-width:1px; border-color: #CECECE; padding-left:20px;}
+#search-text:hover {box-shadow: 1px 2px 5px #CECECE, -1px -1px 5px #CECECE;}
+#search-text:focus {outline:none; box-shadow: 1px 2px 5px #CECECE, -1px -1px 5px #CECECE;}
+#clear-button {width: 25px; height: auto; margin-left:-150px;position: absolute; top:33px; padding-right: 10px; border-right:solid; border-right-color:#CECECE; border-right-width:1px;}
+#search-by-voice {width:15px; margin-left: -115px; position:absolute; top:34px;}
+#search-button {width:18px; margin-left: -95px; position:absolute; top:35px; }
+button {background-color:transparent; border:none;}
+#right-buttons {float:right; }
+#google-apps-button {height:30px; position:relative; top:20px; right:5px; border-radius:50%;}
+#google-apps-button:hover {background-color:#E7E7E7;}
+#google-apps {width:20px;}
+#sign-in {background-color: #329BFE; padding: 10px; padding-left: 20px; padding-right: 20px; border-radius:5px; color:white; font-weight:bold; position:relative; top:15px; right:5px; box-shadow: 0px 1px #C3E0FB;}
+</style>
+
+
+<!DOCTYPE HTML>
+<html>
+  <div id="top-nav">
+ <a href="https://google.com" id="google-button"><img src="https://www.google.com/logos/doodles/2020/december-holidays-days-2-30-6753651837108830.5-s.png"></a>
+  <form action="" id="search-bar">
+    <input type="text" id="search-text" required>
+  <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNYPN9qt4DLXWYP8OMqCpANiuVfJZDta6-g&usqp=CAU" alt="clear" id="clear-button"></button>
+  <button>  <img src="https://www.greenlanemarketing.com/wp-content/uploads/2018/06/Google_mic.svg-1.png" alt="search by voice" id="search-by-voice"></button>
+    <button type="submit">  <img src="https://cdn1.iconfinder.com/data/icons/toolbar-signs/512/search-512.png" alt="search" id="search-button"></button>
+    </form>
+        <div id="right-buttons">
+          <button id="google-apps-button"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmtKE4jxOFqplcU6QrunYTJjrkqfq2_yYGA&usqp=CAU" alt="" id="google-apps"></button>
+          <button id="sign-in">Sign In</button>
+    </div>
+    </div>
+  
+  
+</html>
