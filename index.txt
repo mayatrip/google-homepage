@@ -1,20 +1,52 @@
 <style>
 #google-button {float:left; padding-top:10px; padding-left:20px; }
+#top-nav {position:sticky; top:-100px;}
 #search-bar {padding-left: 50px; display:inline-block;}
 #search-text {position: relative; height:40px; margin-top: 15px; width: 40vw; border-radius:25px; border-width:1px; border-color: #CECECE; padding-left:20px;}
 #search-text:hover {box-shadow: 1px 2px 5px #CECECE, -1px -1px 5px #CECECE;}
 #search-text:focus {outline:none; box-shadow: 1px 2px 5px #CECECE, -1px -1px 5px #CECECE;}
-#clear-button {width: 25px; height: auto; margin-left:-150px;position: absolute; top:33px; padding-right: 10px; border-right:solid; border-right-color:#CECECE; border-right-width:1px;}
-#search-by-voice {width:15px; margin-left: -115px; position:absolute; top:34px;}
-#search-button {width:18px; margin-left: -95px; position:absolute; top:35px; }
+#clear-button {width: 25px; height: auto; margin-left:-150px;position: absolute; top:25px; padding-right: 10px; border-right:solid; border-right-color:#CECECE; border-right-width:1px;}
+#search-by-voice {width:15px; margin-left: -115px; position:absolute; top:28px;}
+#search-button {width:18px; margin-left: -95px; position:absolute; top:29px; }
 button {background-color:transparent; border:none;}
 #right-buttons {float:right; }
-#google-apps-button {height:30px; position:relative; top:20px; right:5px; border-radius:50%;}
+#google-apps-button {height:30px; position:relative; top:20px; right:15px; border-radius:50%;}
 #google-apps-button:hover {background-color:#E7E7E7;}
 #google-apps {width:20px;}
-#sign-in {background-color: #329BFE; padding: 10px; padding-left: 20px; padding-right: 20px; border-radius:5px; color:white; font-weight:bold; position:relative; top:15px; right:5px; box-shadow: 0px 1px #C3E0FB;}
+#sign-in {background-color: #138CFF; padding: 10px; padding-left: 20px; padding-right: 20px; border-radius:5px; color:white; font-size:14px; position:relative; top:15px; right:5px; font-family: 'Open Sans', sans-serif;}
+#sign-in:hover {background-color: #329BFE; box-shadow: 0px 1px #C3E0FB;}
+#search-type {display: flex; flex-direction:row; padding-left:200px; padding-top:20px; border-bottom:solid; border-bottom-width: 1px; border-bottom-color: #F0F0F0;}
+#all-button, #news-button, #maps-button, #videos-button, #shopping-button, #more-button, #settings-button, #tools-button {font-size:12px; color: #595959; font-family: 'Open Sans', sans-serif; padding:7px; padding-left: 10px; padding-right: 10px; margin-bottom:0px; cursor:pointer;}
+#all-button:focus, #news-button:focus, #maps-button:focus, #videos-button:focus, #shopping-button:focus, #more-button:focus {color: #138CFF; outline: none; border-bottom: solid; border-bottom-color: #138CFF;}
+#settings-button {margin-left:155px;}
+#settings-button:active {color: #138CFF; outline: none;}
+#dropdown {position: relative;
+  display: inline-block;}
+#dropdown:hover #dropdown-content {display:block; right:0;}
+#dropdown-content {display:none; position:absolute; border-radius: 10px; box-shadow: 1px 2px 5px #CECECE, -1px -1px 5px #CECECE; }
+#dropdown-content a {color: black;
+  padding: 5px; padding-left: 20px; padding-right: 20px;
+  text-decoration: none;
+  display: block; margin-top:5px; margin-bottom:5px; font-family: 'Open Sans', sans-serif; font-size:14px;}
+#dropdown-content a:hover {background-color:#E0E0E0}
+#tools-button {margin-left:5px;}
+#tools-button:hover {color:black; border:solid; border-width:1px; border-color:#DBDBDB; border-radius: 2px; box-shadow: 0px 1px #DBDBDB; background-color:#F9F9F9;}
+#tools-button:focus {outline:none; border:solid; border-width:1px; border-color:#DBDBDB; border-radius: 2px; background-image: linear-gradient(#FFF, #DBDBDB)}
+main {font-family: 'Open Sans', sans-serif; margin-left:210px;}
+#search-time {font-size:13px; color: #838383;}
+.search-result-website {text-decoration:none; font-size:13px; color: black; }
+.cached-dropdown {display:inline; position:relative}
+.cached-img {width:10px; margin-bottom:3px;}
+.cached-dropdown-content {display:none; position:absolute; height:30px;}
+.cached-dropdown a {color:black; padding:10px;  text-decoration:none; font-size:13px; align-text:center;}
+.cached-dropdown:hover .cached-dropdown-content {display:block; font-family: 'Open Sans', sans-serif; box-shadow: 1px 2px 5px #B8B7B7, -1px -2px 5px #B8B7B7; left:0; }
+header {font-size:18px; margin-top:5px; margin-bottom:5px; }
+header a{text-decoration:none;}
 </style>
 
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 <!DOCTYPE HTML>
 <html>
@@ -31,6 +63,35 @@ button {background-color:transparent; border:none;}
           <button id="sign-in">Sign In</button>
     </div>
     </div>
-  
-  
+  <div id="search-type">
+    <button id="all-button">All</button>
+    <button id="news-button">News</button>
+    <button id="maps-button">Maps</button>
+    <button id="videos-button">Videos</button>
+    <button id="shopping-button">Shopping</button>
+    <button id="more-button">More</button>
+    <div id="dropdown">
+      <button id="settings-button">Settings</button>
+    <div id="dropdown-content">
+      <a href="">Search settings</a>
+      <a href="">Languages</a>
+      <a href="">Hide explicit results</a>
+      <a href="">Advanced search</a>
+      <a href="">Search history</a>
+      <a href="">Your data in Search</a>
+      <a href="">Search help</a>
+  </div>
+    </div>
+    <button id="tools-button">Tools</button>
+  </div>
+  <main>
+    <p id="search-time">About 90,400,000 results (0.59 seconds)</p>
+    <div class="search-result">
+      <a href="https://victor-lf.github.io/google-search-results/" class="search-result-website">https://victor-lf.github.io > google-search-results/</a>
+      <div class="cached-dropdown">
+        <button class="cached-button"><img src="data:image/png;base64,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" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:CQwVcUMLM0YJ:https://victor-lf.github.io/google-search-results/+&cd=1&hl=en&ct=clnk&gl=us">Cached</a></div>
+      </div>
+      <header><a href="https://victor-lf.github.io/google-search-results/">build this webpage - GitHub Pages</a></header>
 </html>
