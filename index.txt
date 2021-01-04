@@ -1,8 +1,9 @@
 <style>
-#google-button {float:left; padding-top:10px; padding-left:20px; }
+#google-button {float:left; padding-top:20px; padding-left:20px;}
+#google-logo {width:100px;}
 #top-nav {position:sticky; top:0px; background-color:white;}
-#search-bar {padding-left: 50px; display:inline-block;}
-#search-text {position: relative; height:40px; margin-top: 15px; width: 40vw; border-radius:25px; border-width:1px; border-color: #CECECE; padding-left:20px;}
+#search-bar {padding-left: 70px; display:inline-block;background-color:white;}
+#search-text {position: relative; height:40px; margin-top: 15px; width: 40vw; border-radius:25px; border-width:1px; border-color: #CECECE; padding-left:20px; }
 #search-text:hover {box-shadow: 1px 2px 5px #CECECE, -1px -1px 5px #CECECE;}
 #search-text:focus {outline:none; box-shadow: 1px 2px 5px #CECECE, -1px -1px 5px #CECECE;}
 #clear-button {width: 25px; height: auto; margin-left:-150px;position: absolute; top:25px; padding-right: 10px; border-right:solid; border-right-color:#CECECE; border-right-width:1px;}
@@ -37,14 +38,33 @@ main {font-family: 'Open Sans', sans-serif; margin-left:210px;}
 .black-text {text-decoration:none; font-size:13px; color: black; }
 .gray-text {text-decoration:none; font-size:13px; color: #5B5B5B; }
 .cached-dropdown {display:inline; position:relative}
+.cached-dropdown-similar {display:inline; position:relative}
 .cached-img {width:7px; height:auto; margin-bottom:2px; }
 .cached-dropdown-content {display:none; background-color: white; position:absolute; height:30px;}
+.cached-dropdown-content-similar {display:none; background-color: white; position:absolute; height:50px;}
 .cached-dropdown a {color:black; padding:10px;  text-decoration:none; font-size:13px; align-text:center;}
+.cached-dropdown-similar a {color:black; padding:10px;  text-decoration:none; font-size:13px; align-text:center;}
 .cached-dropdown:hover .cached-dropdown-content {display:block; font-family: 'Open Sans', sans-serif; box-shadow: 1px 2px 5px #B8B7B7, -1px -2px 5px #B8B7B7; left:0; }
+.cached-dropdown-similar:hover .cached-dropdown-content-similar {display:block; font-family: 'Open Sans', sans-serif; box-shadow: 1px 2px 5px #B8B7B7, -1px -2px 5px #B8B7B7; left:0; }
 header {font-size:18px; margin-top:3px; margin-bottom:3px; padding-bottom:0px;}
 header a{text-decoration:none; color:#000DD3;}
 header a:hover {border-bottom:solid;}
 .search-description {font-size:13px; margin-top:3px; color: #373737;}
+#people-also-ask {display: grid; grid-template-rows: repeat(12, 45px) 10px; width:37vw; border-radius:10px; }
+.people-also-ask-content {background-color:white; padding-left:15px; padding-top:10px; border:solid; border-bottom: none; border-width:1px; border-color: #CECECE;}
+.people-also-ask-content-bottom {background-color:white; padding-left:15px; padding-top:10px; border:solid; border-bottom-radius:10px; border-width:1px; border-color: #CECECE; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+}
+.people-also-ask-content-top {background-color:white; padding-left:15px; padding-top:10px; border:solid; border-bottom: none; border-width:1px; border-color: #CECECE; border-top-left-radius: 10px; border-top-right-radius: 10px; font-size:20px;}
+.down-arrow-img {width:10px;}
+.people-also-ask-content img {float:right; margin-right:20px; margin-top:8px;}
+.people-also-ask-content-bottom img {float:right; margin-right:20px; margin-top:8px;}
+.people-also-ask-feedback a {font-size:12px; color:#5B5B5B; margin-right:10px; font-style:italic; text-decoration:none;}
+.people-also-ask-feedback a:hover {text-decoration:underline;}
+.people-also-ask-feedback {justify-self:end;}
+.cached-dropdown-content-ad {display:none; background-color: white; position:absolute; height:40px; width:120px; padding-top:15px; text-align:center; border-radius:8px;}
+.cached-dropdown:hover .cached-dropdown-content-ad {display:block; font-family: 'Open Sans', sans-serif; box-shadow: 1px 2px 5px #B8B7B7, -1px -2px 5px #B8B7B7; left:0; }
+.cached-dropdown-content-ad a:hover {background-color:#E0E0E0;}
+h1 {font-size:20px; font-weight:normal;}
 </style>
 
 
@@ -54,7 +74,7 @@ header a:hover {border-bottom:solid;}
 <!DOCTYPE HTML>
 <html>
   <div id="top-nav">
- <a href="https://google.com" id="google-button"><img src="https://www.google.com/logos/doodles/2020/december-holidays-days-2-30-6753651837108830.5-s.png"></a>
+ <a href="https://google.com" id="google-button"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="" id="google-logo"></a>
   <form action="" id="search-bar">
     <input type="text" id="search-text" required>
   <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNYPN9qt4DLXWYP8OMqCpANiuVfJZDta6-g&usqp=CAU" alt="clear" id="clear-button"></button>
@@ -97,7 +117,7 @@ header a:hover {border-bottom:solid;}
           <a href="https://webcache.googleusercontent.com/search?q=cache:-yl53MhJsfwJ:https://christine-27.github.io/google-homepage/+&cd=2&hl=en&ct=clnk&gl=us">Cached</a></div>
       </div>
       <header><a href="https://victor-lf.github.io/google-search-results/">build this webpage - GitHub Pages</a></header>
-      <p class="search-description"><strong>build this webpage.</strong> https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...</p></div>
+      <p class="search-description">build this webpage. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...</p></div>
     
     <br>
     
@@ -109,7 +129,7 @@ header a:hover {border-bottom:solid;}
           <a href="https://webcache.googleusercontent.com/search?q=cache:CQwVcUMLM0YJ:https://victor-lf.github.io/google-search-results/+&cd=1&hl=en&ct=clnk&gl=us">Cached</a></div>
       </div>
       <header><a href="https://christine-27.github.io/google-homepage/">build this webpage - GitHub Pages</a></header>
-      <p class="search-description">With zero coding experience, artist <strong>building</strong> 180 <strong>webpages</strong> . ... days ago, having never done any programming in her life, Jennifer Dewalt built her first <strong>webpage</strong>.</p></div>
+      <p class="search-description">With zero coding experience, artist building 180 webpages . ... days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage.</p></div>
     
     <br>
     
@@ -121,7 +141,127 @@ header a:hover {border-bottom:solid;}
           <a href="https://webcache.googleusercontent.com/search?q=cache:CQwVcUMLM0YJ:https://victor-lf.github.io/google-search-results/+&cd=1&hl=en&ct=clnk&gl=us">Cached</a></div>
       </div>
       <header><a href="https://www.websitebuilderexpert.com/building-websites/">How to Build a Website 2020 | A Step-by-Step Beginner's Guide</a></header>
-      <p class="search-description">Dec 17, 2020 — Anyone can <strong>build</strong> a <strong>website</strong> with the right tools - and the right guide! We'll show you how to make yours in just 9 steps.</p></div>
+      <p class="search-description">Dec 17, 2020 — Anyone can build a website with the right tools - and the right guide! We'll show you how to make yours in just 9 steps.</p></div>
+    
+    <br>
+    
+    <div id="people-also-ask">
+      <div class="people-also-ask-content-top">People also ask</div>
+      <div class="people-also-ask-content">How can I create my own webpage?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">What does it cost to build a Web page?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">How do I build my website for free?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">How can I create a simple website?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">What is the best program to build a website?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">Can you make a website without a website builder?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">How can I create a website and earn money?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">How can I upload my HTML website online for free?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">How much does a website cost per month?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content">How hard is it to make a website?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-content-bottom">Should I build my own website or pay someone?<img src="https://freepngimg.com/thumb/web_design/24702-6-down-arrow-file-thumb.png" class="down-arrow-img"></div>
+      <div class="people-also-ask-feedback"><a href="https://www.google.com/search?q=build+this+webpage">Feedback</a></div>
+    </div>
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://www.pcmag.com/how-to/how-to-create-a-website" class="black-text">www.pcmag.com </a><a href="https://www.pcmag.com/how-to/how-to-create-a-website" class="gray-text">› ... › Web Hosting</a>
+      <div class="cached-dropdown">
+        <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:KZYGoytdVz0J:https://www.pcmag.com/how-to/how-to-create-a-website+&cd=12&hl=en&ct=clnk&gl=us">Cached</a></div>
+      </div>
+      <header><a href="https://www.pcmag.com/how-to/how-to-create-a-website">How to Create a Website | PCMag</a></header>
+      <p class="search-description">You can use an online service to create web pages, or build it offline using a desktop software tool. Or, if you're a coding dynamo, use a plain text editor to create a ...</p></div>
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://www.squarespace.com/" class="black-text">www.squarespace.com</a>
+      <div class="cached-dropdown-similar">
+        <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content-similar">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:QULlb0HKbOUJ:https://www.squarespace.com/+&cd=13&hl=en&ct=clnk&gl=us">Cached</a>
+            <a href="https://www.google.com/search?q=related:https://www.squarespace.com/+build+this+webpage&sa=X&ved=2ahUKEwijuoH35YDuAhXWsJ4KHWMrBKUQHzAMegQIHBAG">Similar</a>
+          </div>
+      </div>
+      <header><a href="https://www.squarespace.com/">Squarespace: Build a Website – Website Builder</a></header>
+      <p class="search-description">Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...</p></div>
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://websitesetup.org/" class="black-text">www.websitesetup.org</a>
+      <div class="cached-dropdown-similar">
+        <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content-similar">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:BPgQtV9GryMJ:https://websitesetup.org/+&cd=14&hl=en&ct=clnk&gl=us">Cached</a>
+            <a href="https://www.google.com/search?q=related:https://websitesetup.org/+build+this+webpage&sa=X&ved=2ahUKEwijuoH35YDuAhXWsJ4KHWMrBKUQHzANegQIHxAG">Similar</a>
+          </div>
+      </div>
+      <header><a href="https://websitesetup.org/">How to Create a Website: Step-by-Step Guide for Beginners ...</a></header>
+      <p class="search-description">Nov 5, 2020 — Learn how to make a website and set it up. This site contains different tutorials on how to build a website using WordPress, Joomla, Drupal ...</p></div>
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://www.youtube.com/watch?v=YWA-xbsJrVg" class="black-text">www.youtube.com </a><a href="https://www.youtube.com/watch?v=YWA-xbsJrVg" class="gray-text">› watch › YWA-xbsJrVg</a>
+      <header><a href="https://www.youtube.com/watch?v=YWA-xbsJrVg">How to Make a Website in 10 mins - Simple & Easy - YouTube</a></header>
+      <p class="search-description">Jan 3, 2018 — Start Here ➜ https://websitelearners.com/video/make-a-website/#startGet our NEW Course ...</p></div>
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://www.google.com/business/website-builder/" class="black-text">www.google.com </a><a href="https://www.google.com/business/website-builder/" class="gray-text">› business › website-builder</a>
+      <div class="cached-dropdown">
+        <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:7dAxNGBXvQwJ:https://www.google.com/business/website-builder/+&cd=16&hl=en&ct=clnk&gl=us">Cached</a></div>
+      </div>
+      <header><a href="https://www.google.com/business/website-builder/">Free Website Builder For Your Business - Google My Business</a></header>
+      <p class="search-description">Let Google build your first website for free. We'll help you create a beautiful website to impress and engage new customers – and establish your business online.</p></div>
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://www.webhostingsecretrevealed.net/blog/web-hosting-guides/make-a-website/" class="black-text">www.webhostingsecretrevealed.net </a><a href="https://www.webhostingsecretrevealed.net/blog/web-hosting-guides/make-a-website/" class="gray-text">› WHSR Blog</a>
+      <div class="cached-dropdown">
+        <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:DqUZlsXWVP4J:https://www.webhostingsecretrevealed.net/blog/web-hosting-guides/make-a-website/+&cd=17&hl=en&ct=clnk&gl=us">Cached</a></div>
+      </div>
+      <header><a href="https://www.webhostingsecretrevealed.net/blog/web-hosting-guides/make-a-website/">
+How to Create a Website: Step-by-Step Tutorial</a></header>
+      <p class="search-description">Oct 21, 2020 — Hosting a website on these “bundle” platforms is usually expensive and less flexible; but you'll get to build a website or online store easily.</p></div>
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://www.weebly.com/" class="black-text">www.weebly.org</a>
+      <div class="cached-dropdown-similar">
+        <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content-similar">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:Gu5uPx0TbQsJ:https://www.weebly.com/+&cd=18&hl=en&ct=clnk&gl=us">Cached</a>
+            <a href="https://www.google.com/search?q=related:https://www.weebly.com/+build+this+webpage&sa=X&ved=2ahUKEwijuoH35YDuAhXWsJ4KHWMrBKUQHzARegQIGxAG">Similar</a>
+          </div>
+      </div>
+      <header><a href="https://www.weebly.com/">Free Website Builder: Build a Free Website or Online Store ...</a></header>
+      <p class="search-description">Weebly's free website builder makes it easy to create a website, blog, or online store. Find customizable templates, domains, and easy-to-use tools for any type ...</p></div>
+    
+    
+    <br>
+    
+    <div class="search-result">
+      <a href="https://www.wix.com/html5us/hiker-build?cq_term=%2Bbuild+%2Bweb&gclid=EAIaIQobChMIr-zNvfCA7gIVDz6tBh0WsAJxEAMYASAAEgK6bfD_BwE&cq_cmp=1626917941&cq_plt=gp&cq_plac=&cq_con=64674666231&cq_src=google_ads&cq_pos=&cq_net=g&cq_med=&utm_campaign=1626917941%5E64674666231&utm_medium=cpc" class="black-text">www.wix.com</a>
+      <div class="cached-dropdown">
+        <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
+        <div class="cached-dropdown-content-ad">
+          <a href="https://webcache.googleusercontent.com/search?q=cache:CQwVcUMLM0YJ:https://victor-lf.github.io/google-search-results/+&cd=1&hl=en&ct=clnk&gl=us">Why This Ad?</a></div>
+      </div>
+      <header><a href="https://www.wix.com/html5us/hiker-build?cq_term=%2Bbuild+%2Bweb&gclid=EAIaIQobChMIr-zNvfCA7gIVDz6tBh0WsAJxEAMYASAAEgK6bfD_BwE&cq_cmp=1626917941&cq_plt=gp&cq_plac=&cq_con=64674666231&cq_src=google_ads&cq_pos=&cq_net=g&cq_med=&utm_campaign=1626917941%5E64674666231&utm_medium=cpc">Build Your Own Website - Create Your Own Website, Free.</a></header>
+      <p class="search-description">Easy to Use, Online Website Builder. 100s of Apps. Easy-to-add blog. Customizable templates. 24/7 support center. 1000s of free images. Advanced image editor. Easy drag n’ drop. Traffic generation tools. Market leaders. Customizable online store.</p></div>
+    
+    <br>
+    <h1>People also search for</h1>
     
     
     
