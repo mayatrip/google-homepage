@@ -65,6 +65,20 @@ header a:hover {border-bottom:solid;}
 .cached-dropdown:hover .cached-dropdown-content-ad {display:block; font-family: 'Open Sans', sans-serif; box-shadow: 1px 2px 5px #B8B7B7, -1px -2px 5px #B8B7B7; left:0; }
 .cached-dropdown-content-ad a:hover {background-color:#E0E0E0;}
 h1 {font-size:20px; font-weight:normal;}
+#people-also-search-for {display:grid;  grid-template-rows: 30px 150px 60px; width:645px; background-color:white; padding-left:25px; border:solid; border-width:1px; border-color: #CECECE; border-radius:10px; grid-row-gap:25px;}
+#gray-up-arrow {width:12px; float:right; margin-right:20px;}
+#grid-ads {display:grid; grid-template-columns:repeat(6, 100px); grid-column-gap:5px;  margin-right:10px; }
+.ad {border:solid; border-width:1px; border-color: #CECECE; border-radius:10px;}
+.ad-img {width: 98px; padding-top:5px;}
+.ad a {color:black; text-decoration:none; font-size:14px; }
+.ad a:hover {text-decoration:underline;}
+.ad-text {margin-left:10px;  display:block; overflow: hidden; text-overflow: ellipsis;}
+#see-more-button {width:300px; border:solid; border-width:1px; border-color: #CECECE; border-radius:30px; height:40px; margin-bottom:20px; font-size:14px; color:#000DD3;}
+#see-more-div {justify-self:center;}
+.final-feedback a {width:645px; float:right; font-size:12px; color:#5B5B5B; margin-right:10px; margin-top:5px; font-style:italic; text-decoration:none; display:block;}
+.final-feedback a:hover {text-decoration:underline;}
+#related-searches {display:grid; grid-template-columns: 270px 300px; grid-template-rows: repeat(4, 25px); font-size:14px; margin-top:20px;}
+#related-searches a {text-decoration:none;color:#000DD3;}
 </style>
 
 
@@ -251,7 +265,7 @@ How to Create a Website: Step-by-Step Tutorial</a></header>
     <br>
     
     <div class="search-result">
-      <a href="https://www.wix.com/html5us/hiker-build?cq_term=%2Bbuild+%2Bweb&gclid=EAIaIQobChMIr-zNvfCA7gIVDz6tBh0WsAJxEAMYASAAEgK6bfD_BwE&cq_cmp=1626917941&cq_plt=gp&cq_plac=&cq_con=64674666231&cq_src=google_ads&cq_pos=&cq_net=g&cq_med=&utm_campaign=1626917941%5E64674666231&utm_medium=cpc" class="black-text">www.wix.com</a>
+      <a href="https://www.wix.com/html5us/hiker-build?cq_term=%2Bbuild+%2Bweb&gclid=EAIaIQobChMIr-zNvfCA7gIVDz6tBh0WsAJxEAMYASAAEgK6bfD_BwE&cq_cmp=1626917941&cq_plt=gp&cq_plac=&cq_con=64674666231&cq_src=google_ads&cq_pos=&cq_net=g&cq_med=&utm_campaign=1626917941%5E64674666231&utm_medium=cpc" class="black-text"><strong>Ad</strong> •   www.wix.com</a>
       <div class="cached-dropdown">
         <button class="cached-button"><img src="https://www.pngitem.com/pimgs/m/52-520106_transparent-grey-triangle-png-triangle-png-download.png" alt="" class="cached-img"></button>
         <div class="cached-dropdown-content-ad">
@@ -262,8 +276,34 @@ How to Create a Website: Step-by-Step Tutorial</a></header>
     
     <br>
     <h1>People also search for</h1>
-    
-    
-    
+    <div id="people-also-search-for">
+      <div><p>Web design program<img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png" alt="" id="gray-up-arrow"></p></div>
+      <div id="grid-ads">
+        <div class="ad"><a href="https://www.google.com/search?q=Mobirise&stick=H4sIAAAAAAAAAOOQUeLVT9c3NEyrSrNMyig3MBIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmJE1XeKkUs_V9-g0qTExLjgFCMniGNYZp5XBpUwKkzKKS-CSlgUFlWZQiXKsypMSvKgnJScnAJDc5iqjOSKQijb2KjCMgtmZ0Z8lXlxWrzlL0ahcAzHNrAwLmLl8M1PyizKLE69xSbJoDW1iuvZ3szC2HenD_CtlrHgDrBbfutBOR8Ard0ERvwAAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAAwEnoECCIQAw"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPBao2ICgOkWq6z_TGCjwsVhGVp-xgAMICPkYk&s=0" class="ad-img" alt=""></a><a href="https://www.google.com/search?q=Mobirise&stick=H4sIAAAAAAAAAOOQUeLVT9c3NEyrSrNMyig3MBIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmJE1XeKkUs_V9-g0qTExLjgFCMniGNYZp5XBpUwKkzKKS-CSlgUFlWZQiXKsypMSvKgnJScnAJDc5iqjOSKQijb2KjCMgtmZ0Z8lXlxWrzlL0ahcAzHNrAwLmLl8M1PyizKLE69xSbJoDW1iuvZ3szC2HenD_CtlrHgDrBbfutBOR8Ard0ERvwAAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAAwEnoECCIQAw" class="ad-text">Mobirise</a></div>
+        <div class="ad"><a href="https://www.google.com/search?q=Google+Web+Designer&stick=H4sIAAAAAAAAAOOQUeLSz9U3qDQpMTEuMBIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmLk1U_XNzRMq0qzTMooNzjFiGTIKUZOEMewzDyvDCphVJiUU14ElbAoLKoyhUqUZ1WYlORBOSk5OQWG5jBVGckVhVC2sVGFZRbMzoz4KvPitHjLX4xC4RiObWBhXMQq7J6fn56TqgCSdgFLpxbdYpNk0JpaxfVsb2Zh7LvTB_hWy1hwB9gtv_WgnA8A068kygQBAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAEwEnoECCIQBA"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSpSMKC7r_yJ67RGg7dm9bktdromGlxfBbb3OE&s=0" class="ad-img" alt=""></a><a href="https://www.google.com/search?q=Google+Web+Designer&stick=H4sIAAAAAAAAAOOQUeLSz9U3qDQpMTEuMBIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmLk1U_XNzRMq0qzTMooNzjFiGTIKUZOEMewzDyvDCphVJiUU14ElbAoLKoyhUqUZ1WYlORBOSk5OQWG5jBVGckVhVC2sVGFZRbMzoz4KvPitHjLX4xC4RiObWBhXMQq7J6fn56TqgCSdgFLpxbdYpNk0JpaxfVsb2Zh7LvTB_hWy1hwB9gtv_WgnA8A068kygQBAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAEwEnoECCIQBA" class="ad-text">Google Web Designer</a></div>
+        <div class="ad"><a href="https://www.google.com/search?q=Adobe+Dreamweaver&stick=H4sIAAAAAAAAAOOQUeLUz9U3MCwzzyszEipPTVJISS3OTM9TKCjKTy9KzI0SSirNzElRKMnILFYAShckpqeeYuTVT9c3NEyrSrNMyig3OMXIBTKj0qTExLjgFCPCQKiEUWFSTnkRVMKisKjKFCpRnlVhUpIH5aTk5BQYmsNUZSRXFELZxkYVllkwOzPiq8yL0-ItfzEKhWM4toGFcRGroGNKflKqgktRamJueWpiWWrRLTZJBq2pVVzP9mYWxr47fYBvtYwFd4Dd8lsPyvkAp69NAAEBAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAIwEnoECCIQBQ"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTql6JmqV6cToivW_VX75cf2M5C9u8VjF_WhybD&s=0" class="ad-img" alt=""></a><a href="https://www.google.com/search?q=Adobe+Dreamweaver&stick=H4sIAAAAAAAAAOOQUeLUz9U3MCwzzyszEipPTVJISS3OTM9TKCjKTy9KzI0SSirNzElRKMnILFYAShckpqeeYuTVT9c3NEyrSrNMyig3OMXIBTKj0qTExLjgFCPCQKiEUWFSTnkRVMKisKjKFCpRnlVhUpIH5aTk5BQYmsNUZSRXFELZxkYVllkwOzPiq8yL0-ItfzEKhWM4toGFcRGroGNKflKqgktRamJueWpiWWrRLTZJBq2pVVzP9mYWxr47fYBvtYwFd4Dd8lsPyvkAp69NAAEBAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAIwEnoECCIQBQ" class="ad-text">Adobe Dreamwear</a></div>
+        <div class="ad"><a href="https://www.google.com/search?q=CoffeeCup+HTML+Editor&stick=H4sIAAAAAAAAAOOQUeLSz9U3MCpMyikvMhIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmLk1U_XNzRMq0qzTMooNzjFCDak0qTExLjgFCMniGNYZp5XBpWAmA6VsCgsqjKFSpRnVZiU5EE5KTk5BYbmMFUZyRWFULaxUYVlFszOjPgq8-K0eMtfjELhGI5tYGFcxCrqnJ-WlprqXFqg4BHi66PgmpJZkl90i02SQWtqFdezvZmFse9OH-BbLWPBHWC3_NaDcj4AnOzuQAYBAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAMwEnoECCIQBg"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_LxOhVlxTAA-qyEub7L-_580jXFNpfJHeaxSKcyyxat12UKYYQxw&s=0" class="ad-img" alt=""></a><a href="https://www.google.com/search?q=CoffeeCup+HTML+Editor&stick=H4sIAAAAAAAAAOOQUeLSz9U3MCpMyikvMhIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmLk1U_XNzRMq0qzTMooNzjFCDak0qTExLjgFCMniGNYZp5XBpWAmA6VsCgsqjKFSpRnVZiU5EE5KTk5BYbmMFUZyRWFULaxUYVlFszOjPgq8-K0eMtfjELhGI5tYGFcxCrqnJ-WlprqXFqg4BHi66PgmpJZkl90i02SQWtqFdezvZmFse9OH-BbLWPBHWC3_NaDcj4AnOzuQAYBAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAMwEnoECCIQBg" class="ad-text">CoffeeCup HTML Editor</a></div>
+        <div class="ad"><a href="https://www.google.com/search?q=RapidWeaver&stick=H4sIAAAAAAAAAOOQUeLUz9U3sCgsqjI1EipPTVJISS3OTM9TKCjKTy9KzI0SSirNzElRKMnILFYAShckpqeeYuTVT9c3NEyrSrNMyig3OMXIBTKj0qTExLjgFCPYQMMy87wyqIRRYVJOeRFUAmwTVKI8q8KkJA_KScnJKTA0h6nKSK4ohLKNjSoss2B2ZsRXmRenxVv-YhQKx3BsAwvjIlbuoMSCzJTw1MSy1KJbbJIMWlOruJ7tzSyMfXf6AN9qGQvuALvltx6U8wEAAq_H-PsAAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAQwEnoECCIQBw"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR6cwQ1itvsWaqD0V-Xg90At-25gWKa61NQg7g&s=0" class="ad-img" alt=""></a><a href="https://www.google.com/search?q=RapidWeaver&stick=H4sIAAAAAAAAAOOQUeLUz9U3sCgsqjI1EipPTVJISS3OTM9TKCjKTy9KzI0SSirNzElRKMnILFYAShckpqeeYuTVT9c3NEyrSrNMyig3OMXIBTKj0qTExLjgFCPYQMMy87wyqIRRYVJOeRFUAmwTVKI8q8KkJA_KScnJKTA0h6nKSK4ohLKNjSoss2B2ZsRXmRenxVv-YhQKx3BsAwvjIlbuoMSCzJTw1MSy1KJbbJIMWlOruJ7tzSyMfXf6AN9qGQvuALvltx6U8wEAAq_H-PsAAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAQwEnoECCIQBw" class="ad-text">RapidWeaver</a></div>
+        <div class="ad"><a href="https://www.google.com/search?q=openElement&stick=H4sIAAAAAAAAAOOQUeLSz9U3KM-qMCnJMxIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmLk1U_XNzRMq0qzTMooNzjFCDak0qTExLjgFCMniGNYZp5XBpUwKkzKKS-CSlgUFlWZQiUg1kI5KTk5BYbmMFUZyRWFULaxUYVlFszOjPgq8-K0eMtfjELhGI5tYGFcxMqdX5Ca55qTmpuaV3KLTZJBa2oV17O9mYWx704f4FstY8EdYLf81oNyPgA-FuYP_AAAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAUwEnoECCIQCA"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6bsRXSOV_BTPZzw3GTN6YMHAdGhJnMQ6beMiA37HvcazUhroQEg&s=0" class="ad-img" alt=""></a><a href="https://www.google.com/search?q=openElement&stick=H4sIAAAAAAAAAOOQUeLSz9U3KM-qMCnJMxIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmLk1U_XNzRMq0qzTMooNzjFCDak0qTExLjgFCMniGNYZp5XBpUwKkzKKS-CSlgUFlWZQiUg1kI5KTk5BYbmMFUZyRWFULaxUYVlFszOjPgq8-K0eMtfjELhGI5tYGFcxMqdX5Ca55qTmpuaV3KLTZJBa2oV17O9mYWx704f4FstY8EdYLf81oNyPgA-FuYP_AAAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQs9oBKAUwEnoECCIQCA" class="ad-text">openElement(Freeware)</a></div>
+      </div>
+      <div id="see-more-div"><form>
+  <button formaction="https://www.google.com/search?q=Web+design+program&stick=H4sIAAAAAAAAAOOQMRIqT01SSEktzkzPUygoyk8vSsyNEkoqzcxJUSjJyCxWAEoXJKannmLk1U_XNzRMq0qzTMooNzjFyKWfq29QaVJiYlxwipETxDEsM88rg0oYFSbllBdBJSwKi6pMoRLlWRUmJXlQTkpOToGhOUxVRnJFIZRtbFRhmQWzMyO-yrw4Ld7yF6NQOIZjG1gYF7FiEb_FJsmgNbWK69nezMLYd6cP8K2WseAOsFt-60E5HwDr5e0w9wAAAA&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ4qYDMBJ6BAgiEAk" id="see-more-button">See More</button>
+</form>
+</div>
+    </div>
+    <div class="final-feedback"><a href="https://www.google.com/search?q=build+this+webpage">Feedback</a></div>
+    <br>
+    <br>
+    <header>Searches related to build this webpage</header>
+    <div id="related-searches">
+      <div><a href="https://www.google.com/search?q=free+website+builder&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoAHoECBEQAQ" class="related-searches-link">free website builder</a></div>
+      <div><a href="https://www.google.com/search?q=how+to+build+a+website+from+scratch+html&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoBHoECBEQBQ" class="related-searches-link">how to build a website from scratch html</a></div>
+      <div><a href="https://www.google.com/search?q=how+to+build+a+website+from+scratch&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoAXoECBEQAg" class="related-searches-link">how to build a website from scratch</a></div>
+      <div><a href="https://www.google.com/search?q=learn+how+to+build+a+website&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoBXoECBEQBg" class="related-searches-link">learn how to build a website</a></div>
+      <div><a href="https://www.google.com/search?q=best+way+to+build+a+website&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoAnoECBEQAw" class="related-searches-link">best way to build a website</a></div>
+      <div><a href="https://www.google.com/search?q=web+project&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoBnoECBEQBw" class="related-searches-link">web project</a></div>
+      <div><a href="https://www.google.com/search?q=create+professional+website&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoA3oECBEQBA" class="related-searches-link">create professional website</a></div>
+      <div><a href="https://www.google.com/search?q=web+development&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoB3oECBEQCA" class="related-searches-link">web development</a></div>
+    </div>
     
 </html>
