@@ -79,6 +79,10 @@ h1 {font-size:20px; font-weight:normal;}
 .final-feedback a:hover {text-decoration:underline;}
 #related-searches {display:grid; grid-template-columns: 270px 300px; grid-template-rows: repeat(4, 25px); font-size:14px; margin-top:20px;}
 #related-searches a {text-decoration:none;color:#000DD3;}
+.bottom-google-letters {width: 38px; height:80px; overflow:hidden; text-indent: -40px; display:inline-block; margin-left: 150px;}
+.page-tab-letters {width:75px;}
+#google-o {display:inline-block;  float:right; margin-right:738px; margin-top:2px;}
+#google-o a {text-decoration:none; color:#FFC300; font-size:30px; font-weight:bold; padding-right:-3px;}
 </style>
 
 
@@ -304,6 +308,25 @@ How to Create a Website: Step-by-Step Tutorial</a></header>
       <div><a href="https://www.google.com/search?q=web+project&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoBnoECBEQBw" class="related-searches-link">web project</a></div>
       <div><a href="https://www.google.com/search?q=create+professional+website&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoA3oECBEQBA" class="related-searches-link">create professional website</a></div>
       <div><a href="https://www.google.com/search?q=web+development&sa=X&ved=2ahUKEwi_k_zBq4PuAhXRqZ4KHefgBwAQ1QIoB3oECBEQCA" class="related-searches-link">web development</a></div>
+     
     </div>
+    <br>
+    <div class="bottom-google-letters">
+      <img class="page-tab-letters" src="https://designforhackers.com/wp-content/uploads/2015/09/google-new-logo-G-comparison.png" alt="">
+    </div>
+    <div id="google-o">
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=QjL2X-iHOpLZ9AO0wobACA&start=10&sa=N&ved=2ahUKEwjosLjDpojuAhWSLH0KHTShAYgQ8tMDegQIDxA1">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=QjL2X-iHOpLZ9AO0wobACA&start=20&sa=N&ved=2ahUKEwjosLjDpojuAhWSLH0KHTShAYgQ8tMDegQIDxA3&biw=1500&bih=735">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=gOT8X_ytGMqi5NoP1PapwA4&start=30&sa=N&ved=2ahUKEwj87aCtiZXuAhVKEVkFHVR7Cug4FBDy0wN6BAgEEDo&biw=1500&bih=735">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=meT8X9HGIICy5NoPu4GhwAk&start=40&sa=N&ved=2ahUKEwiR9565iZXuAhUAGVkFHbtACJg4HhDy0wN6BAgHEDw&biw=1500&bih=735">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=ruT8X-PJFcOr5NoP7du0qAI&start=50&sa=N&ved=2ahUKEwjj2JXDiZXuAhXDFVkFHe0tDSU4KBDy0wN6BAgHED0&biw=1500&bih=735">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=wuT8X4HSMIGs5NoPrJWewA8&start=60&sa=N&ved=2ahUKEwiBu_XMiZXuAhUBFlkFHayKB_g4MhDy0wN6BAgHED8&biw=1500&bih=735">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=1uT8X-9jhrPk2g-A16rYAg&start=70&sa=N&ved=2ahUKEwjvporWiZXuAhWGGVkFHYCrCis4PBDy0wN6BAgHEEA&biw=1500&bih=735">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=C-X8X_qqDOKQggffh5vwDQ&start=80&sa=N&ved=2ahUKEwi63LjviZXuAhViiOAKHd_DBt44RhDy0wN6BAgHED8&biw=1500&bih=735">o</a>
+      <a href="https://www.google.com/search?q=build+this+webpage&ei=HeX8X6D3A9GKggeQr5og&start=90&sa=N&ved=2ahUKEwjg-fr3iZXuAhVRheAKHZCXBgQ4UBDy0wN6BAgHED8&biw=1500&bih=735">o</a>
+    </div>
+    <div id="gle">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="" id="gle-img"></div>
+    
     
 </html>
